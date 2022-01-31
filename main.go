@@ -3,27 +3,26 @@ package main
 import "fmt"
 
 func main() {
-	// Declaracion  de constantes
-	const pi float64 = 3.14
-	const pi2 = 3.15
-	fmt.Println(pi, pi2)
+	// declacion de variables
+	helloMessage := "hello"
+	worldMessage := "world"
 
-	// Declaracion de variables enteras
-	base := 12
-	var altura int = 14
-	var area int
-	fmt.Println(base, altura, area)
+	//	Println
+	fmt.Println(helloMessage)
+	fmt.Println(worldMessage)
 
-	// Zero values
-	var a int
-	var b float64
-	var c string
-	var d bool
-	fmt.Println(a, b, c, d)
+	// Printf
+	nombre := "Platzi"
+	cursos := 500
+	fmt.Printf("%s tiene mas de %d cursos\n", nombre, cursos)
+	fmt.Printf("%v tiene mas de %v cursos\n", nombre, cursos)
 
-	// Area dee un cuadrado
-	const baseCuadrado = 10
-	areaCuadrado := baseCuadrado * baseCuadrado
-	fmt.Println("Area Cuedrado = ", areaCuadrado)
+	// Sprintf
+	messege := fmt.Sprintf("%s tiene mas de %d cursos", nombre, cursos)
+	fmt.Println(messege)
+
+	// 	Tipo datos
+	fmt.Printf("nombre: %T\n", nombre)
+	fmt.Printf("cursos: %T\n", cursos)
 
 }
