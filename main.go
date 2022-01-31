@@ -2,27 +2,15 @@ package main
 
 import "fmt"
 
+func CalcularVolumenCaja(largo, ancho, alto int) (a int, d string) {
+	texto := "litros"
+	return largo * ancho * alto, texto
+}
+
 func main() {
-	// declacion de variables
-	helloMessage := "hello"
-	worldMessage := "world"
+	value1, value2 := CalcularVolumenCaja(50, 50, 30)
+	divicion := value1 / 3
+	fmt.Println("la capacidad de la caja en litros es:", divicion, value2)
 
-	//	Println
-	fmt.Println(helloMessage)
-	fmt.Println(worldMessage)
-
-	// Printf
-	nombre := "Platzi"
-	cursos := 500
-	fmt.Printf("%s tiene mas de %d cursos\n", nombre, cursos)
-	fmt.Printf("%v tiene mas de %v cursos\n", nombre, cursos)
-
-	// Sprintf
-	messege := fmt.Sprintf("%s tiene mas de %d cursos", nombre, cursos)
-	fmt.Println(messege)
-
-	// 	Tipo datos
-	fmt.Printf("nombre: %T\n", nombre)
-	fmt.Printf("cursos: %T\n", cursos)
-
+	fmt.Printf("La capacidad de la caja en litros es: %d %s", divicion, value2)
 }
